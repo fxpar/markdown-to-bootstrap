@@ -28,18 +28,37 @@ The known implementation will be published here.
 | Moosh (Moodle) | | |
 
 
-# Components
+# Technicalities
 
-Here is the markdown code to create the various Bootstrap components. Remarks are added for implementation.
 
-----
+## Attributes
 
-## ATTRIBUTES
+Bootstrap customization rely on classes. 
 
-Bootstrap customization rely on classes. Attributes MUST be passed from markdown to the component.
+**Attributes MUST be passed from markdown to the component** through a common syntax. 
 
 (see Jumbotron for examples)
 
+
+
+## Overrides
+
+Implementation should provide a serie of overrides for the default values.
+
+**Overrides MUST be available in the yaml meta** of the markdown document.
+
+```
+---
+links-to-button: false
+video-to-embeds: false
+---
+
+```
+
+
+# Components
+
+Below is the markdown code to create the various Bootstrap components. 
 
 ----
 
@@ -67,7 +86,7 @@ More paragraphs can be added after the horizontal line.
 
 **First paragraph after title is "lead"**: only the first paragraph has a "lead" class.
 
-**The horizontal line is not necessayr** : as per definition, jumbotron includes a line after the first paragraph. 
+**The horizontal line is not necessary** : as per definition, jumbotron includes a line after the first paragraph. 
 * color of the line border SHOULD follow the color of the text
 
 **Attributes MUST be passed**: background color, text color especially 
@@ -75,7 +94,7 @@ must be passed through the following attribute syntax
 
 
 ```
-::: jumbotron {.bg-light}
+::: jumbotron {.bg-success .text-white}
 # Title of a colored jumbotron
 Lead text of a colored jumbotron.
 
@@ -149,6 +168,10 @@ This content is in the foot. Formated text can be there.
 
 **Cards can be included in most other components**
 
+**Images inside a card SHOULD be card-image**: add the card-img and card-fluid classes by default
+
+
+
 
 ----
 
@@ -213,9 +236,9 @@ Third toggle content
 
 **The level of the first title defines the drawer**: the implementation SHOULD apply the first title inside the carousel div as the title level for all drawers
 
-** ::: Drawer tag is not necessary**: as per the manifest, it SHOULD NOT be necessary to add other divs to create the accordion
+**::: Drawer tag is not necessary**: as per the manifest, it SHOULD NOT be necessary to add other divs to create the accordion
 
-** ::: Drawer tag COULD be implemented**: user might want to include same title level inside the drawer. Allowing the use of ::: Drawer could be useful.
+**::: Drawer tag COULD be implemented**: user might want to include same title level inside the drawer. Allowing the use of ::: Drawer could be useful.
 
 **Multiple accordions MUST be possible on page**: automatic id is therefore expected in implementation
 
