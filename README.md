@@ -20,7 +20,7 @@ The known implementation will be published here.
 
 | Language or software | Bootstrap 4 | Bootstrap 5 |
 | ----- | ----- | ----- |
-| Pandoc Lua | Partial | Mostly |
+| [Pandoc Lua](https://github.com/fxpar/markdown-to-bootstrap-pandoc-lua-filter) | Partial | Mostly |
 | Hugo (Node) |  |  |
 | Vuepress (Vue) |  |  |
 | Machine Learning (TF) | | | 
@@ -33,7 +33,7 @@ The known implementation will be published here.
 
 ## Attributes
 
-Bootstrap customization rely on classes. 
+Bootstrap customization relies mainly on css classes added to html. 
 
 **Attributes MUST be passed from markdown to the component** through a common syntax. 
 
@@ -45,12 +45,13 @@ Bootstrap customization rely on classes.
 
 Implementation should provide a serie of overrides for the default values.
 
-**Overrides MUST be available in the yaml meta** of the markdown document.
+**Overrides MUST be available in the YAML Front Matter** of the markdown document.
 
 ```
 ---
 links-to-button: false
 video-to-embeds: false
+tabs-pills: true
 ---
 
 ```
@@ -255,15 +256,15 @@ Third toggle content
 
 ::: tabs
 
-# First pill
+# First Tab Link
 ## Subtitle of the first tab
 Content of the first tab
 
-# Second pill
+# Second tab Link
 ## Subtitle for the second tab
 Content of the second tab
 
-# Third pill
+# Third tab link
 ## Subtitle for the third tab
 Content of the third tab
 
