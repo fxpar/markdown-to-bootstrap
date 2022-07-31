@@ -67,8 +67,7 @@ Below is the markdown code to create the various Bootstrap components.
 
 
 
-* [Jumbotron discussion Page](https://github.com/fxpar/Markdown-to-Bootstrap/wiki/Jumbotron)  :for more explanation about why it works this way
-
+* [Check an exemple:](https://fxpar.github.io/markdown-to-bootstrap/index.html#sectionJumbotron)  
 
 ### Markdown
 
@@ -109,6 +108,8 @@ Description after a horizontal line of a colored jumbotron.
 
 ## ALERTS
 
+* [Check an exemple:](https://fxpar.github.io/markdown-to-bootstrap/index.html#sectionAlerts)  
+
 All the bootstrap color are included:
 * primary
 * secondary
@@ -135,6 +136,8 @@ Here is an information alert
 
 ## CARDS
 See also carddeck
+
+* [Check an exemple:](https://fxpar.github.io/markdown-to-bootstrap/index.html#sectionCards)  
 
 ### Markdown
 
@@ -178,6 +181,8 @@ This content is in the foot. Formated text can be there.
 
 ## CAROUSEL
 
+* [Check an exemple:](https://fxpar.github.io/markdown-to-bootstrap/index.html#sectionCarousel)  
+
 ### Markdown
 
 ```
@@ -213,6 +218,9 @@ Some representative placeholder content for the third slide.
 ---- 
 
 ## ACCORDION
+
+* [Check an exemple:](https://fxpar.github.io/markdown-to-bootstrap/index.html#sectionAccordion)  
+
 
 ### Markdown
 
@@ -250,6 +258,8 @@ Third toggle content
 
 ## TABS
 
+* [Check an exemple:](https://fxpar.github.io/markdown-to-bootstrap/index.html#sectionTabs)  
+
 ### Markdown
 
 ```
@@ -280,6 +290,8 @@ Content of the third tab
 ---- 
 
 ## BUTTONS
+
+* [Check an exemple:](https://fxpar.github.io/markdown-to-bootstrap/index.html#sectionButtons)  
 
 **Links SHOULD turned into buttons**: this is the default conversion behaviour.
 
